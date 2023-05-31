@@ -1,6 +1,7 @@
 add_library(sharp STATIC
     src/object.cpp
     src/valuetype.cpp
+    src/char.cpp
     src/string.cpp
     src/console.cpp
 )
