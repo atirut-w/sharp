@@ -11,5 +11,6 @@ namespace System
 
         String(const char *chars);
         operator const char *() const;
+        String &operator+(const String &) const;
     };
 }
