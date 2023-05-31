@@ -5,6 +5,7 @@ namespace System
 {
     class Console : public Object
     {
-
+    public:
+        static void Write(String &s);
     };
 }
