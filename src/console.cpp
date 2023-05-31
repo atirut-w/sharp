@@ -5,5 +5,5 @@ using namespace System;
 
 void Console::Write(String &s)
 {
-    std::cout << s << std::endl;
+    std::cout << s << std::flush;
 }
