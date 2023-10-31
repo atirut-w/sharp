@@ -5,5 +5,9 @@ namespace System
 {
     class Char : public ValueType
     {
+    private:
+        short value;
+    public:
+        Char(short value) : value(value) {}
     };
 }
