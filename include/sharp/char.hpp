@@ -7,7 +7,9 @@ namespace System
     {
     private:
         short value;
+
     public:
         Char(short value) : value(value) {}
+        operator short() const { return value; }
     };
 }
