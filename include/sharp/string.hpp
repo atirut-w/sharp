@@ -8,10 +8,11 @@ namespace System
     {
     private:
         Char *_chars = nullptr;
+
     public:
         int Length = 0;
 
-        String() {};
+        String(){};
         String(const String &other);
         ~String();
 

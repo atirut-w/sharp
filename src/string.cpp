@@ -22,7 +22,7 @@ String::String(const char value[])
         Length++;
     if (Length == 0)
         return;
-    
+
     _chars = new Char[Length];
     for (int i = 0; i < Length; i++)
         _chars[i] = value[i];
