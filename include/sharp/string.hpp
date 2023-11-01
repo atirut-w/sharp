@@ -14,5 +14,7 @@ namespace System
         ~String();
 
         String(const char value[]);
+
+        Char operator[](int index) const { return _chars[index]; }
     };
 }
