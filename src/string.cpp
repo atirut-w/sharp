@@ -48,7 +48,7 @@ const Char &String::operator[](int index)
 
 String String::operator=(const String &other)
 {
-    if (other.Length == 0)
+    if (other.Length == 0 || this == &other)
         return *this;
     if (Length > 0)
         delete[] _chars;
