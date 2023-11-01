@@ -13,7 +13,8 @@ String::String(const String &other)
 
 String::~String()
 {
-    delete[] _chars;
+    if (_chars != nullptr)
+        delete[] _chars;
 }
 
 String::String(const char value[])
