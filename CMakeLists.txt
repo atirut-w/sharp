@@ -6,6 +6,7 @@ add_library(sharp STATIC
 
     # High-level types ("high-level" used loosely here)
     "src/string.cpp"
+    "src/exceptions.cpp"
     
     "src/console.cpp"
 )
