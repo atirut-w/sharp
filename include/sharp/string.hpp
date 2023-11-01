@@ -16,7 +16,7 @@ namespace System
 
         String(const char value[]);
 
-        Char operator[](int index) const { return _chars[index]; }
-        const Char &operator[](int index) { return _chars[index]; }
+        Char operator[](int index) const;
+        const Char &operator[](int index);
     };
 }
