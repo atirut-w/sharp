@@ -45,3 +45,18 @@ const Char &String::operator[](int index)
         throw IndexOutOfRangeException("Index was outside the bounds of the array.");
     return _chars[index];
 }
+
+String String::operator=(const String &other)
+{
+    if (other.Length == 0)
+        return *this;
+    if (Length > 0)
+        delete[] _chars;
+
+    Length = other.Length;
+    _chars = new Char[Length];
+    for (int i = 0; i < Length; i++)
+        _chars[i] = other._chars[i];
+
+    return *this;
+}

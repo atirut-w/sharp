@@ -20,5 +20,6 @@ namespace System
 
         Char operator[](int index) const;
         const Char &operator[](int index);
+        String operator=(const String &other);
     };
 }
