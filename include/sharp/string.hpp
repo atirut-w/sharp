@@ -11,6 +11,7 @@ namespace System
         int Length = 0;
 
         String();
+        String(const String &other);
         ~String();
 
         String(const char value[]);
