@@ -12,5 +12,7 @@ namespace System
 
         String();
         ~String();
+
+        String(const char value[]);
     };
 }
