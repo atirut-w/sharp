@@ -1,10 +1,11 @@
 #pragma once
+#include <sharp/object.hpp>
 #include <sharp/char.hpp>
 #include <sharp/string.hpp>
 
 namespace System
 {
-    class Console
+    class Console : public Object
     {
     public:
         static void Write(String value);

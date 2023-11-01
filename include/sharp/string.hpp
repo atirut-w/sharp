@@ -1,9 +1,10 @@
 #pragma once
+#include <sharp/object.hpp>
 #include <sharp/char.hpp>
 
 namespace System
 {
-    class String
+    class String : public Object
     {
     private:
         Char *_chars = nullptr;

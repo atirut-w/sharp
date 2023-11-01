@@ -1,9 +1,10 @@
 #pragma once
+#include <sharp/object.hpp>
 #include <sharp/string.hpp>
 
 namespace System
 {
-    class Exception
+    class Exception : public Object
     {
     public:
         String Message;
