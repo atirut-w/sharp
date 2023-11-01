@@ -6,11 +6,11 @@ namespace System
     class String
     {
     private:
-        Char *_chars;
+        Char *_chars = nullptr;
     public:
         int Length = 0;
 
-        String();
+        String() {};
         String(const String &other);
         ~String();
 

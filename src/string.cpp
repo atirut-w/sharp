@@ -3,12 +3,6 @@
 
 using namespace System;
 
-String::String()
-{
-    _chars = new Char[1];
-    _chars[0] = '\0';
-}
-
 String::String(const String &other)
 {
     Length = other.Length;
