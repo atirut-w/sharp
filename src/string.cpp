@@ -5,6 +5,9 @@ using namespace System;
 
 String::String(const String &other)
 {
+    if (other.Length == 0)
+        return;
+
     Length = other.Length;
     _chars = new Char[Length];
     for (int i = 0; i < Length; i++)
