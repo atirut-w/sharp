@@ -6,7 +6,7 @@ namespace System
 {
     /**
      * @brief Represents text as a sequence of UTF-16 code units.
-    */
+     */
     class String : public Object
     {
     private:
@@ -21,8 +21,7 @@ namespace System
 
         String(const char value[]);
 
-        Char operator[](int index) const;
-        const Char &operator[](int index);
+        const Char &operator[](int index) const;
         void operator=(const String &other);
     };
 }
