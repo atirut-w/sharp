@@ -46,10 +46,10 @@ const Char &String::operator[](int index)
     return _chars[index];
 }
 
-String String::operator=(const String &other)
+void String::operator=(const String &other)
 {
     if (other.Length == 0 || this == &other)
-        return *this;
+        return;
     if (Length > 0)
         delete[] _chars;
 
@@ -57,6 +57,4 @@ String String::operator=(const String &other)
     _chars = new Char[Length];
     for (int i = 0; i < Length; i++)
         _chars[i] = other._chars[i];
-
-    return *this;
 }
