@@ -3,6 +3,12 @@
 
 using namespace System;
 
+String::~String()
+{
+    if (_chars != nullptr)
+        delete[] _chars;
+}
+
 String::String(const String &other)
 {
     if (other._chars == nullptr)
@@ -12,12 +18,6 @@ String::String(const String &other)
     _chars = new Char[Length];
     for (int i = 0; i < Length; i++)
         _chars[i] = other._chars[i];
-}
-
-String::~String()
-{
-    if (_chars != nullptr)
-        delete[] _chars;
 }
 
 String::String(const char value[])

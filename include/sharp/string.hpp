@@ -16,9 +16,9 @@ namespace System
         int Length = 0;
 
         String(){};
-        String(const String &other);
         ~String();
 
+        String(const String &other);
         String(const char value[]);
 
         const Char &operator[](int index) const;
